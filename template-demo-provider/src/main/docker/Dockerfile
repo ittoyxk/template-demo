@@ -22,6 +22,4 @@ COPY --from=builder @project.parent.artifactId@-dao-@project.version@.jar /appli
 COPY --from=builder @project.parent.artifactId@-biz-@project.version@.jar /application/BOOT-INF/lib/
 COPY --from=builder classes/ /application/BOOT-INF/classes
 
-RUN rm /bin/sh && rm /bin/bash
-
 ENTRYPOINT ["/application/entrypoint.sh"]
