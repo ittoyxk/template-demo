@@ -8,22 +8,22 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>net.commchina</groupId>
-    <artifactId>template-provider</artifactId>
+    <artifactId>template-demo-provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>provider</name>
+    <name>template-demo-provider</name>
     <packaging>jar</packaging>
 
 
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>template-biz</artifactId>
+            <artifactId>template-demo-biz</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>${project.parent.artifactId}</finalName>
+        <finalName>${project.name}</finalName>
         <filters>
             <filter>src/main/resources/bootstrap.properties</filter>
         </filters>

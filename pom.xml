@@ -21,14 +21,14 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
-        <commchina.common>2.3.0.1</commchina.common>
+        <commchina.common>2.3.0.2</commchina.common>
     </properties>
 
     <modules>
-        <module>template-provider</module>
-        <module>template-biz</module>
-        <module>template-dao</module>
-        <module>template-common</module>
+        <module>template-demo-provider</module>
+        <module>template-demo-biz</module>
+        <module>template-demo-dao</module>
+        <module>template-demo-common</module>
     </modules>
 
     <dependencyManagement>
@@ -63,6 +63,17 @@
             <groupId>net.commchina.framework</groupId>
             <artifactId>commchina-common</artifactId>
             <version>${commchina.common}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

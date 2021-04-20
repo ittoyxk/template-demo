@@ -8,12 +8,21 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>net.commchina</groupId>
-    <artifactId>template-dao</artifactId>
+    <artifactId>template-demo-biz</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>template-dao</name>
+    <name>template-demo-biz</name>
     <description>Demo project for Spring Boot</description>
     <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>template-demo-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>template-demo-dao</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
-
 
 </project>
